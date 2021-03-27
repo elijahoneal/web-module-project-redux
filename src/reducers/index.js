@@ -14,7 +14,7 @@ const initialState = {
       { id: 4, name: 'Rear spoiler', price: 250 }
     ]
   };
- const reducer = (state, action) => {
+ const reducer = (state = initialState, action) => {
      switch(action.type) {
          default: 
             return state;
