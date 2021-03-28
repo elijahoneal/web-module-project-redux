@@ -5,7 +5,7 @@ import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 import { connect } from 'react-redux';
-
+import { addFeature} from './actions'
 const App = (props) => {
  
 
@@ -31,4 +31,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default  connect(mapStateToProps, {})( App );
+export default  connect(mapStateToProps, { addFeature})( App );
